@@ -1,0 +1,23 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ .. \FrameXML\UI.xsd">
+	<Script file="kyleUIsettings.lua"/>
+	<Frame name="kyleUIsettingsFrame">
+		<Scripts>
+			<OnLoad function="kyleUIsettingsFrame_OnLoad"/>
+		</Scripts>
+		<Frames>
+		<Button name="kyleUIsetupAddons" inherits="OptionsButtonTemplate" text="Setup Addons">
+			<Anchors>
+				<Anchor point="CENTER">
+					<Offset>
+						<AbsDimension x="0" y="0"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+			<Scripts>
+				<OnClick> kyleUI_SetupAddons(); </OnClick>
+			</Scripts>
+		</Button>
+		</Frames>
+	</Frame>
+</Ui>
