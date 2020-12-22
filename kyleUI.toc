@@ -1,8 +1,7 @@
 ## Title: |cffffc0ffkyleUI|r
 ## Interface: 90002
-## Version: 0.1.0
+## Version: 1.0.2
 ## Author: Kyle
 ## Notes: Scripts to manage other addons
 
 kyleUI.xml
-kyleUI.lua

@@ -1,23 +1,39 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ .. \FrameXML\UI.xsd">
+	<!-- settings menu -->
 	<Script file="kyleUIsettings.lua"/>
 	<Frame name="kyleUIsettingsFrame">
 		<Scripts>
-			<OnLoad function="kyleUIsettingsFrame_OnLoad"/>
+			<OnLoad function="kyleUI_Settings_OnLoad"/>
 		</Scripts>
 		<Frames>
-		<Button name="kyleUIsetupAddons" inherits="OptionsButtonTemplate" text="Setup Addons">
-			<Anchors>
-				<Anchor point="CENTER">
-					<Offset>
-						<AbsDimension x="0" y="0"/>
-					</Offset>
-				</Anchor>
-			</Anchors>
-			<Scripts>
-				<OnClick> kyleUI_SetupAddons(); </OnClick>
-			</Scripts>
-		</Button>
+			<Button name="kyleUIsetupAddons" inherits="OptionsButtonTemplate" text="Setup Addons">
+				<Anchors>
+					<Anchor point="CENTER">
+						<Offset>
+							<AbsDimension x="0" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick> kyleUI_SetupAddons(); </OnClick>
+				</Scripts>
+			</Button>
 		</Frames>
 	</Frame>
+
+	<!-- main logic -->
+	<Script file="kyleUI.lua"/>
+
+	<!-- modules -->
+	<Script file="modules/omnibar.lua" />
+	<Script file="modules/omnicc.lua" />
+	<Script file="modules/sarena.lua" />
+	<Script file="modules/bigdebuffs.lua" />
+	<Script file="modules/diminish.lua" />
+	<Script file="modules/jaxpartycastbars.lua" />
+	<Script file="modules/leatrixplus.lua" />
+	<Script file="modules/abilityteamtracker.lua" />
+	<Script file="modules/advancedinterfaceoptions.lua" />
+	<Script file="modules/xarui.lua" />
 </Ui>
