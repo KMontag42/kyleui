@@ -20,4 +20,13 @@ Also sets up arena addons profiles for you.
 * Leatrix Plus
 * Diminish
 * JaxPartyCastBars
-* AdvancedInterfaceOptions (coming soon)
+* AdvancedInterfaceOptions
+* XarUI
+
+## How to use
+
+Settings -> Interface Options -> kyleUI -> Setup Addons
+
+Then set each addon to use the newly created `kyleUI` profile.
+
+Profit.
