@@ -74,6 +74,12 @@ function eventHandler:ADDON_LOADED(addon)
             end
         end
     )
+    
+    -- focus frame scale
+    FocusFrame:SetScale(1.25)
+    
+    -- target cast bar scale
+    TargetFrameSpellBar:SetScale(1.50)
 end
 
 -- underscore b/c the interface options stuff is a bit wonky
