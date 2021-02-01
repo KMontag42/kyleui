@@ -1,6 +1,6 @@
 ## Title: |cffffc0ffkyleUI|r
 ## Interface: 90002
-## Version: 1.0.3
+## Version: 1.0.4
 ## Author: Kyle
 ## Notes: Scripts to manage other addons
 
