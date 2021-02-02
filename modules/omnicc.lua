@@ -11,7 +11,7 @@ eventHandler:SetScript(
 
 function m:Setup(addonProfileKey)
     -- OmniCC
-    if OmniCCDB["profiles"][addonProfileKey] == nil then
+    if OmniCCDB ~= nil and OmniCCDB["profiles"][addonProfileKey] == nil then
         OmniCCDB["profiles"][addonProfileKey] = {
             ["rules"] = {
                 {

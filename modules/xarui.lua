@@ -11,7 +11,7 @@ eventHandler:SetScript(
 
 function m:Setup(addonProfileKey)
     -- XarUI
-    if XarUIDB["profiles"][addonProfileKey] == nil then
+    if XarUIDB ~= nil and XarUIDB["profiles"][addonProfileKey] == nil then
         XarUIDB["profiles"][addonProfileKey] = {
             ["Misc"] = {
                 ["hideUIErrorsFrame"] = false,

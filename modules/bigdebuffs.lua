@@ -11,7 +11,7 @@ eventHandler:SetScript(
 
 function m:Setup(addonProfileKey)
     -- BigDebuffs
-    if BigDebuffsDB["profiles"][addonProfileKey] == nil then
+    if BigDebuffsDB ~= nil and BigDebuffsDB["profiles"][addonProfileKey] == nil then
         BigDebuffsDB["profiles"][addonProfileKey] = {
             ["raidFrames"] = {
                 ["cooldownFont"] = "Arial Narrow",

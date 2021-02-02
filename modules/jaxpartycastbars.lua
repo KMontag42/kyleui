@@ -11,7 +11,7 @@ eventHandler:SetScript(
 
 function m:Setup(addonProfileKey)
     -- jaxPartyCastBars
-    if jpcbDB["profiles"][addonProfileKey] == nil then
+    if jpcbDB ~= nil and jpcbDB["profiles"][addonProfileKey] == nil then
         jpcbDB["profiles"][addonProfileKey] = {
             ["attachPointBar"] = "BOTTOMLEFT",
             ["offsetX"] = 0,

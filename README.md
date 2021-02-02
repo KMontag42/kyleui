@@ -9,6 +9,9 @@ Also sets up arena addons profiles for you.
 * Arena nameplate numbers
 * Hide default menu buttons
 * Sort self to bottom of group (only when Sort By: Group is picked)
+* Bigger cast bars
+* Position personal cast bar under player frame
+* Hide pvp icons
 
 ## Addon profiles
 

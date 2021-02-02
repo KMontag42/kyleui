@@ -74,12 +74,29 @@ function eventHandler:ADDON_LOADED(addon)
             end
         end
     )
-    
-    -- focus frame scale
-    FocusFrame:SetScale(1.25)
-    
-    -- target cast bar scale
+
+    -- cast bars
     TargetFrameSpellBar:SetScale(1.50)
+    FocusFrame:SetScale(1.25)
+
+    -- personal cast bar
+    CastingBarFrame:SetMovable(true)
+    CastingBarFrame:SetUserPlaced(true)
+    CastingBarFrame:ClearAllPoints()
+    CastingBarFrame:SetPoint("TOP", PlayerFrame, "BOTTOM", -10, 0)
+    CastingBarFrame:SetScale(1.25)
+    CastingBarFrame:SetMovable(false)
+
+    -- remove pvp icons
+    PlayerPVPIcon:SetAlpha(0)
+    PlayerPrestigeBadge:SetAlpha(0)
+    PlayerPrestigePortrait:SetAlpha(0)
+    TargetFrameTextureFramePVPIcon:SetAlpha(0)
+    TargetFrameTextureFramePrestigeBadge:SetAlpha(0)
+    TargetFrameTextureFramePrestigePortrait:SetAlpha(0)
+    FocusFrameTextureFramePVPIcon:SetAlpha(0)
+    FocusFrameTextureFramePrestigeBadge:SetAlpha(0)
+    FocusFrameTextureFramePrestigePortrait:SetAlpha(0)
 end
 
 -- underscore b/c the interface options stuff is a bit wonky

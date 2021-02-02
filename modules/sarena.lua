@@ -11,7 +11,7 @@ eventHandler:SetScript(
 
 function m:Setup(addonProfileKey)
     -- sArena
-    if sArena3DB["profiles"][addonProfileKey] == nil then
+    if sArena3DB ~= nil and sArena3DB["profiles"][addonProfileKey] == nil then
         sArena3DB["profiles"][addonProfileKey] = {
             ["layoutSettings"] = {
                 ["Xaryu"] = {

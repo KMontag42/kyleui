@@ -11,7 +11,7 @@ eventHandler:SetScript(
 
 function m:Setup(addonProfileKey)
     -- Diminish
-    if DiminishDB["profiles"][addonProfileKey] == nil then
+    if DiminishDB ~= nil and DiminishDB["profiles"][addonProfileKey] == nil then
         DiminishDB["profiles"][addonProfileKey] = {
             ["categoryTextures"] = {},
             ["timerSwipe"] = true,

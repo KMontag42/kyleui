@@ -10,7 +10,7 @@ eventHandler:SetScript(
 )
 
 function m:Setup(addonProfileKey)
-    if OmniBarDB["profiles"][addonProfileKey] == nil then
+    if OmniBarDB ~= nil and OmniBarDB["profiles"][addonProfileKey] == nil then
         OmniBarDB["profiles"][addonProfileKey] = {
             ["bars"] = {
                 ["OmniBar2"] = {
