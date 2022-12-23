@@ -9,27 +9,6 @@ Also sets up arena addons profiles for you.
 * Arena nameplate numbers
 * Hide default menu buttons
 * Sort self to bottom of group (only when Sort By: Group is picked)
-* Bigger cast bars
-* Position personal cast bar under player frame
 * Hide pvp icons
 
-## Addon profiles
-
-* BigDebuffs
-* sArena
-* OmniBar
-* OmniCC
-* Ability Team Tracker
-* Leatrix Plus
-* Diminish
-* JaxPartyCastBars
-* AdvancedInterfaceOptions
-* XarUI
-
-## How to use
-
-Settings -> Interface Options -> kyleUI -> Setup Addons
-
-Then set each addon to use the newly created `kyleUI` profile.
-
-Profit.
+## Addon profiles [COMING BACK SOON]
