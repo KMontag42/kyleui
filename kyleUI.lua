@@ -24,26 +24,6 @@ function eventHandler:ADDON_LOADED(addon)
         return
     end
 
-    -- hide the default menu buttons
-    local t, f = {
-        "Character",
-        "Spellbook",
-        "Talent",
-        "Achievement",
-        "QuestLog",
-        "Guild",
-        "LFD",
-        "Collections",
-        "EJ",
-        "Store",
-        "MainMenu"
-    }
-    for i = 1, #t do
-        f = _G[t[i] .. "MicroButton"]
-        f:SetScale(.001)
-    end
-    MicroButtonAndBagsBar:Hide()
-
     -- sort myself to the bottom all the time
     -- this only works when the sort type is set to group
     LoadAddOn("Blizzard_CompactRaidFrames")
@@ -75,18 +55,6 @@ function eventHandler:ADDON_LOADED(addon)
         end
     )
 
-    -- cast bars
-    TargetFrameSpellBar:SetScale(1.50)
-    FocusFrame:SetScale(1.25)
-
-    -- personal cast bar
-    CastingBarFrame:SetMovable(true)
-    CastingBarFrame:SetUserPlaced(true)
-    CastingBarFrame:ClearAllPoints()
-    CastingBarFrame:SetPoint("TOP", PlayerFrame, "BOTTOM", -10, 0)
-    CastingBarFrame:SetScale(1.25)
-    CastingBarFrame:SetMovable(false)
-
     -- remove pvp icons
     PlayerPVPIcon:SetAlpha(0)
     PlayerPrestigeBadge:SetAlpha(0)
@@ -103,18 +71,7 @@ end
 function kyleUI_SetupAddons()
     local addonProfileKey = "kyleUI"
 
-    local addons = {
-        "omnibar",
-        "omnicc",
-        "sarena",
-        "bigdebuffs",
-        "diminish",
-        "jaxpartycastbars",
-        "leatrixplus",
-        "abilityteamtracker",
-        "advancedinterfaceoptions",
-        "xarui"
-    }
+    local addons = {}
 
     for i, addon in pairs(addons) do
         if kyleUI.modules[addon] then
